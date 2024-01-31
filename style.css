@@ -1,0 +1,19 @@
+.bordered {
+    border: 3px solid black;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
+.task i {
+    display: inline-block;
+    cursor: pointer;
+
+}
