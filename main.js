@@ -26,9 +26,21 @@ const app = createApp({
 
                 },
             ],
+            newItem: {
+                name: '',
+                done: false,
+            },
         };
     },
     methods: {
+        printNewItem() {
+            const newItemCopy = { ...this.newItem };
+            if (!newItemCopy.name) {
+                alert('Hai dimenticato di digitare, stupido');
+                return;
+            }
+            this.items.push(newItemCopy);
+        },
 
     },
     mounted() {
